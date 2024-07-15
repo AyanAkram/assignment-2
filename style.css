@@ -1,0 +1,252 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    box-sizing: border-box;
+}
+body {
+    background-color: rgb(180, 135, 201);
+    color: rgb(110, 173, 192);
+}
+
+/* home page  */
+
+.navbar {
+    width: 100%;
+    height: 140px;
+    background-color:#603379; #
+    background-size: cover;
+    background-position: center;
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.button-nav {
+    position: relative;
+    overflow: hidden;
+    padding: 10px;
+    color: #ef8f8f;
+}
+.button-nav::after {
+    content: '';
+    display: block;
+    height: 4px;
+    width: 100%;
+    background-color: #0f0508;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+}
+.button-nav:hover::after {
+    transform: scaleX(1);
+}
+.logo {
+    color: rgb(217, 203, 232);
+    font-size: 40px;
+    margin-top: 10px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+span {
+    color: #bb9fef;
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    margin-top: 20px;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 25px;
+    text-transform: capitalize;
+    padding: 10px 10px;
+}
+nav ul li a:hover {
+    color: #bb9fef;
+    transition: .4s;
+}
+.home-content {
+    position: absolute;
+    margin-top: 20%;
+    left: 15%;
+    transform: translateY(-50%);
+}
+.home-content h1 {
+    color: rgb(8, 4, 4);
+    margin: 30px 0px 20px;
+    font-size: 65px;
+}
+
+.home-content h3 {
+    color: rgb(7, 3, 3);
+    font-size: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+/* About page  */
+
+.about {
+    width: 100%;
+    padding: 150px 0px;
+    background-color: #c0b9b9;
+    margin-top: 600px;
+}
+.about img {
+    height: auto;
+    width: 430px;
+}
+.about-text {
+   width: 100%;
+    max-width: 550px;
+    text-align: center;
+    margin-top: 30px;
+}
+.about-content {
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-wrap: wrap;
+}
+.about-text h2 {
+    color: rgb(9, 6, 6);
+    letter-spacing: 2px;
+    font-size: 75px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+.about-text h3 {
+    color: rgb(4, 3, 3);
+    font-size: 25px;
+    margin-bottom: 40px;
+}
+.about-text p {
+    color: rgb(9, 6, 6);
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 18px;
+    margin-bottom: 45px;
+}
+
+/* resume */
+.container {
+    max-width: 80px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header p {
+    margin: 5px 0;
+    color: #888;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+h2 {
+    border-bottom: 2px solid #333;
+    padding-bottom: 5px;
+    color: #333;
+}
+
+.job, .school {
+    margin-bottom: 10px;
+}
+
+.job h3, .school h3 {
+    margin: 0;
+}
+
+.job p, .school p {
+    margin: 5px 0;
+    color: #888;
+}
+
+ul {
+    list-style-type: disc;
+    margin: 10px 0 0 20px;
+    padding: 0;
+}
+/* form */
+
+container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+input[type="text"], input[type="email"], input[type="tel"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+button {
+    padding: 10px 20px;
+    background: #5cb85c;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background: #4cae4c;
+}
